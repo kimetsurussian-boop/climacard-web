@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climacard | Especialistas en Aire Acondicionado Automotriz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #00b4d8;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --success: #25D366;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: var(--light); 
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header { 
+            background: linear-gradient(135deg, #003b80 0%, var(--primary) 100%); 
+            color: white; 
+            padding: 4rem 1.5rem; 
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; font-weight: 800; }
+        header p { margin: 0.5rem 0 0 0; font-size: 1.2rem; opacity: 0.9; }
+
+        .container { padding: 2rem 1.5rem; max-width: 800px; margin: auto; }
+
+        /* Tarjetas de Contenido */
+        .card { 
+            background: white; 
+            padding: 2rem; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        /* Imagen Destacada Principal */
+        .hero-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(rgba(0, 86, 179, 0.1), rgba(0, 180, 216, 0.2)), url('https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+        }
+        .hero-image i { font-size: 5rem; filter: drop-shadow(0px 4px 10px rgba(255,255,255,0.6)); }
+
+        h2 { color: var(--primary); margin-top: 0; font-size: 1.6rem; display: flex; align-items: center; gap: 10px; }
+
+        /* Servicios e Imágenes Ilustrativas */
+        .services-grid { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
+        .service-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            padding: 1rem; 
+            background: #f1f5f9; 
+            border-radius: 10px; 
+            font-weight: 600; 
+            transition: transform 0.2s;
+        }
+        .service-item:hover { transform: translateX(5px); }
+        .service-item i { color: var(--secondary); font-size: 1.4rem; width: 25px; text-align: center; }
+
+        /* Características */
+        .features { display: flex; flex-direction: column; gap: 1rem; }
+        .feature-box { border-left: 4px solid var(--primary); padding-left: 1rem; }
+        .feature-box h4 { margin: 0; color: var(--dark); font-size: 1.1rem; }
+        .feature-box p { margin: 0.2rem 0 0 0; font-size: 0.95rem; color: #64748b; }
+
+        /* Botones de Acción */
+        .cta-container { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+        .btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            padding: 1.2rem; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 12px; 
+            font-size: 1.1rem; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+        .btn-whatsapp { background-color: var(--success); color: white; }
+        .btn-whatsapp:hover { background-color: #20b855; }
+        .btn-phone { background-color: var(--primary); color: white; }
+        .btn-phone:hover { background-color: #004494; }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CLIMACARD</h1>
+        <p><i class="fa-solid fa-snowflake fa-spin" style="--fa-animation-duration: 3s;"></i> Aire Acondicionado Automotriz Profesional</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="hero-image">
+                <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <h2><i class="fa-solid fa-car-side"></i> Especialistas en Climatización</h2>
+            <p>No pases calor en tus viajes. En <strong>Climacard</strong> dejamos el sistema de refrigeración de tu vehículo como nuevo con herramientas de diagnóstico avanzadas y atención de primera de la mano de técnicos expertos.</p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-wrench"></i> Servicios Profesionales</h2>
+            <div class="services-grid">
+                <div class="service-item"><i class="fa-solid fa-gauge-high"></i> Recarga exacta de Gas Refrigerante (R134a / R1234yf)</div>
+                <div class="service-item"><i class="fa-solid fa-vial-virus"></i> Detección electrónica de fugas por ultrasonido o UV</div>
+                <div class="service-item"><i class="fa-solid fa-wind"></i> Desinfección de ductos y cambio de filtros de cabina</div>
+                <div class="service-item"><i class="fa-solid fa-gears"></i> Reparación, embragues y mantenimiento de compresores</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-shield-halved"></i> ¿Por qué elegir Climacard?</h2>
+            <div class="features">
+                <div class="feature-box">
+                    <h4>Diagnóstico Preciso</h4>
+                    <p>Evaluamos la presión y rendimiento exacto de tu sistema para solucionar fallas reales de forma inmediata.</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Trabajo Garantizado</h4>
+                    <p>Utilizamos insumos de alta calidad y repuestos originales para asegurar la durabilidad del enfriamiento.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-id-card"></i> Reserva tu Cita Hoy</h2>
+            <p>Comunícate directamente con nosotros dando clic abajo para agendar tu revisión o recibir una cotización inmediata:</p>
+            
+            <div class="cta-container">
+                <a href="https://wa.me/51984226911?text=Hola%20Climacard,%20quiero%20cotizar%20un%20servicio%20de%20aire%20acondicionado%20para%20mi%20auto." class="btn btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-xl"></i> Cotizar por WhatsApp (984 226 911)
+                </a>
+                
+                <a href="tel:+51984226911" class="btn btn-phone">
+                    <i class="fa-solid fa-phone"></i> Llamar Directamente
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Climacard. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
